@@ -1,0 +1,261 @@
+@media (max-width: 1200px)
+	.menu
+		&_item
+			padding-right: 20px
+		&_link
+			font-size: 13px
+	.promo
+		&_header
+			font-size: 50px
+	.item
+		align-items: flex-start
+		.descr
+			width: 305px
+	.mobile
+		&_item
+			width: 295px
+	.footer
+		&_store
+			position: unset
+			display: flex
+			margin: 10px 0 10px 0 
+			justify-content: center
+		&_message
+			position: unset
+			display: flex
+			margin: 10px 0 30px 0 
+			justify-content: center
+		&_menu
+			justify-content: space-between
+@media (max-width: 991px)
+	.tittle
+		font-size: 30px
+	.menu
+		&_item
+			padding-right: 9px
+		&_link
+			font-size: 10px
+	.subheader
+		&_logo
+			margin-top: 15px
+			img
+				width: 100%
+		&_official
+			font-size: 11px
+		&_phone
+			font-size: 17px
+		&_btn
+			margin-top: 21px
+			width: 100%
+			height: 40px
+	.promo
+		&_header
+			font-size: 40px
+		&_subheader
+			font-size: 30px
+	.item
+		flex-direction: column
+		align-items: center
+		.descr
+			margin-top: 20px
+	.variety
+		&_car
+			img
+				width: 100%
+	.mobile
+		&_item
+			width: 230px
+			height: 205px
+			&_subtitle
+				padding-top: 60px
+				font-size: 16px
+		.subtittle
+			line-height: 18px
+@media (max-width: 767px)
+	.menu
+		position: fixed
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		top: 0
+		left: -100%
+		width: 50%
+		height: 100vh
+		padding: 20px 15px
+		background-color: rgba(0, 0, 0, 0.8)
+		transition: 0.3s
+		&_active
+			left: 0
+		&_item
+			padding-right: 0
+			border: none 
+			margin-top: 10px
+		&_link
+			font-size: 20px
+	.hamburger
+		display: block
+		position: absolute
+		right: 10px
+		top: 50%
+		transform: translateY(-50%)
+		width: 30px
+		span
+			display: block
+			height: 2px
+			background-color: #fff
+			margin-bottom: 4px
+			transition: 0.6s all
+		&_active
+			span
+				margin-bottom: -2px
+				&:nth-child(1)
+					transform: rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: rotate(45deg)				
+	.xs_hidden
+		display: none
+	.xs_visible
+		display: block
+	.subheader
+		&_phone
+			margin-top: 13px
+			display: block
+			font-size: 16px
+			font-weight: normal
+			text-align: center
+			color: #ffffff
+		&_btn
+			display: block
+			width: 160px
+  			height: 22px
+			margin: 13px auto
+
+@media (max-width: 575px)
+	nav
+		height: 30px
+	.subheader
+		height: 60px
+		margin-top: 30px
+		&_official
+			display: none
+		&_logo
+			margin-top: 18px
+		&_phone
+			margin-top: 11px
+			font-size: 12px
+			font-weight: normal
+		&_btn
+			margin-top: 6px
+			width: 110px
+			height: 22px
+			font-size: 10px
+	.promo
+		min-height: 400px
+		padding: 93px 0 35px 0
+		&_descr
+			display: none
+		&_header
+			font-size: 30px
+			padding: 0 24px
+			line-height: 35px
+		&_subheader
+			padding: 0 10px
+			line-height: 20px
+			margin-top: 33px
+			font-size: 20px
+		&_btn
+			width: 210px
+			height: 50px
+			font-size: 16px
+			margin-top: 72px
+			margin-bottom: 0
+	.menu
+		width: 85%
+	.advantages
+		padding: 0 0 36px 0
+	.item
+		margin-top: 26px
+		.icon
+			margin-right: 0
+	.tittle
+		font-size: 15px
+		margin-top: 15px
+		line-height: 15px
+	.subtittle
+		font-size: 14px
+		margin-top: 11px
+	.mobile
+		.row
+			margin-top: 27px
+		&_item
+			margin-bottom: 30px
+	.variety
+		min-height: 390px
+		padding-bottom: 0
+		.tittle
+			display: none
+		.subtittle
+			display: none
+		&_subheader
+			display: none
+		&_car
+			img
+				margin: 75px auto
+				margin-bottom: 0
+	.require
+		&_title
+			font-size: 16px
+		&_list
+			margin-top: 5px
+			li
+				font-size: 14px 
+				margin-bottom: 5px	
+	.world
+		min-height: 360px
+		padding: 25px 0 35px 0
+		.look
+			margin-top: 216px
+	.footer
+		position: relative
+		min-height: 245px
+		&_menu
+			margin-top: 23px
+			padding: 0
+			&_item
+				justify-content: space-between
+				a
+					font-size: 14px
+		&_submenu
+			margin-top: 11px
+			flex-wrap: wrap
+			padding: 0
+			&:after
+				content: ''
+				width: 100%
+				order: 0
+			&_item
+				justify-content: space-between
+				a
+					font-size: 10px
+				&:nth-child(n+3)
+					order: 1
+		&_language
+			margin-top: 12px
+		.line
+			width: 253px
+  			height: 4px
+		&_store
+			position: sticky
+			display: flex
+			margin: 10px 0 30px 0 
+			margin-bottom: 0
+			justify-content: center
+		&_message
+			position: sticky
+			display: flex
+			margin-top: 10px
+			justify-content: center
+		&_subline
+			display: none
